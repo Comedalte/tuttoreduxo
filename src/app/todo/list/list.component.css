@@ -1,0 +1,7 @@
+.selectedtodo {
+    background-color: #88CCCC;
+}
+
+.done {
+    text-decoration: line-through;
+}

@@ -1,0 +1,9 @@
+<ul class="list-group">
+	<li
+		class="list-group-item"
+		[ngClass]="{'selectedtodo': isSelected(todo), 'done': todo.isDone}"
+		*ngFor="let todo of todoList"
+		(click)="toggleSelectTodo(todo)">
+		{{ todo.todo }}
+	</li>
+</ul>

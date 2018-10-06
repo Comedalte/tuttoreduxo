@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+	<div class="card-body" *ngIf="selected">
+		<p class="card-text" [ngClass]="{'done': selected.isDone}">{{ selected.todo }}</p>
+		<button class="btn" (click)="toggleDone()">Toggle done</button>
+	</div>
+	<div class="card-body" *ngIf="!selected">
+		<p class="card-text">No todo selected</p>
+	</div>
+</div>
