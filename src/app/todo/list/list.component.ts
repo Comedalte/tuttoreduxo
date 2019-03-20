@@ -26,7 +26,6 @@ export class ListComponent implements OnInit {
 	}
 
 	isSelected(todo: Todo) {
-		console.log(this.selected, todo, this.selected === todo);
 		return this.selected === todo;
 	}
 }
